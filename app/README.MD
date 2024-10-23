@@ -6,6 +6,7 @@ A simple RESTful API for managing (CRUD) a product catalog, built with FastAPI. 
 
 - [Features](#features)
 - [Technologies](#technologies)
+- [Reasoning](#reasoning)
 - [Getting Started](#getting-started)
 - [Endpoints](#endpoints)
 
@@ -25,6 +26,8 @@ A simple RESTful API for managing (CRUD) a product catalog, built with FastAPI. 
 - [pytest](https://docs.pytest.org/en/latest/)
 - [httpx](https://www.python-httpx.org/)
 
+## Reasoning
+For developing this API we started with a common framework for developing an Python API (FastAPI), with this settled the next choice was on how to handle the unisport catalog supplied, and they have been used as a dictionary to make and thus we end up with a simple to use and responsive CRUD.
 ## Getting Started
 
 ### For running
