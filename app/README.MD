@@ -9,6 +9,7 @@ A simple RESTful API for managing (CRUD) a product catalog, built with FastAPI. 
 - [Reasoning](#reasoning)
 - [Getting Started](#getting-started)
 - [Endpoints](#endpoints)
+- [Next Steps](#next-steps)
 
 ## Features
 
@@ -27,7 +28,10 @@ A simple RESTful API for managing (CRUD) a product catalog, built with FastAPI. 
 - [httpx](https://www.python-httpx.org/)
 
 ## Reasoning
-For developing this API we started with a common framework for developing an Python API (FastAPI), with this settled the next choice was on how to handle the unisport catalog supplied, and they have been used as a dictionary to make and thus we end up with a simple to use and responsive CRUD.
+In developing this API, I chose FastAPI as our framework due to its efficiency and ease of use for building Python APIs. This foundational decision led us to consider the best way to manage the supplied unisport catalog. By utilizing it as a dictionary, we were able to create a straightforward and responsive CRUD interface. This approach not only simplifies the interaction with the catalog but also enhances user experience by ensuring quick and effective data management.
+
+For persistence a simple load and save to the file has been implemented, but in the future a database can be implemented.
+
 ## Getting Started
 
 ### For running
@@ -138,3 +142,11 @@ Updates one specific product based on earlier structure
 
 ### DELETE /products/{product_id}
 Delete one specific product based on earlier structure
+
+## Next steps
+Here's what I would do next on this development:
+1. Better persistence, like a Postgres database, instead of a file
+2. Authentication/Authorization
+3. Search on specific attributes (like type)
+4. Do more complicated sorting like most expensive, more recent etc
+5. Introduce elastic search for dealing with big data databases
