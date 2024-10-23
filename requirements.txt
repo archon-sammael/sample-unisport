@@ -1,4 +1,6 @@
-fastapi
+fastapi~=0.115.3
 uvicorn[standard]
 sqlalchemy
-pydantic
+pydantic~=2.9.2
+pytest~=8.3.3
+httpx
